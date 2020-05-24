@@ -45,12 +45,24 @@ const AccountSettingsForm = (props) => {
       <h3 className="sub-headline no-mp">PERSONAL INFO</h3>
       <form onSubmit={handleUpdate}>
         <div className="input-pair">
-          <label>Firstname: {userData.first_name}</label>
-          <input type="text" onChange={(e) => setFirstName(e.target.value)} />
+          <label>
+            Current first name: <span>{userData.first_name}</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Change first name ..."
+            onChange={(e) => setFirstName(e.target.value)}
+          />
         </div>
         <div className="input-pair">
-          <label>Lastname: {userData.last_name}</label>
-          <input type="text" onChange={(e) => setLastName(e.target.value)} />
+          <label>
+            Current last name: <span>{userData.last_name}</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Change last name ..."
+            onChange={(e) => setLastName(e.target.value)}
+          />
         </div>
         <div className="select-pair">
           <label>Country:</label>

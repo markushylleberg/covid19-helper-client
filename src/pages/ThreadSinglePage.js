@@ -47,7 +47,7 @@ const ThreadSinglePage = (userInfo) => {
   };
 
   return (
-    <div className="page-wrapper-padding single-thread">
+    <div className="page-wrapper-padding single-thread w-60">
       <button
         className="back-arrow"
         onClick={() => history.push(`/tipsandtricks`)}

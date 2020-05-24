@@ -20,7 +20,7 @@ const ThreadsPage = (props) => {
   };
 
   return (
-    <div className="page-wrapper-padding">
+    <div className="page-wrapper-padding w-60">
       <h1 className="text-center headline">Tips and tricks</h1>
       <div>
         <p className="small-text text-center">

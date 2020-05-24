@@ -22,7 +22,7 @@ const ProfilePage = () => {
   }, [setThreads]);
 
   return (
-    <div className="page-wrapper-padding">
+    <div className="page-wrapper-padding w-60">
       <h1 className="text-center headline">My profile</h1>
       <div className="divider"></div>
       <h3 className="sub-headline">Recently liked threads</h3>

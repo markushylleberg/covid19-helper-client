@@ -15,7 +15,7 @@ nav {
   padding: 0 20px;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 16% 84%;
 }
 
 .logo-container {
@@ -27,7 +27,7 @@ nav div:nth-child(2) {
 }
 
 nav div a {
-  padding: 0 20px;
+  padding: 0 10px;
   color: rgba(255, 255, 255, 0.753);
   text-decoration: none;
   outline: none;
@@ -83,4 +83,52 @@ nav div a:hover {
 .active-nav {
   color: rgb(0, 193, 0) !important;
   font-weight: 600;
+}
+
+.mobile-nav {
+  display: none;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.mobile-menu {
+  text-align: right;
+  padding: 0 20px;
+  height: 0px;
+  transition: 0.5s ease;
+  display: none;
+}
+
+.mobile-menu.active {
+  height: auto;
+  display: block;
+}
+
+.mobile-menu div {
+  margin: 5px 0;
+}
+
+.nav-icon {
+  margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+  .logo-container p {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .logo-container p span {
+    font-size: 10px;
+  }
+
+  .mobile-nav {
+    display: grid;
+    grid-template-columns: 16% 84%;
+  }
+
+  .nav-wrapper {
+    display: none;
+  }
 }
