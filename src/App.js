@@ -1,24 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Navigation from './components/Navigation';
 import './App.css';
 
 function App() {
+  const [userInfo, setUserInfo] = useState('');
+
+  const LoginRequiredUrls = ['/account_settings', '/logout'];
+  const UserIsAuthIgnoreUrls = ['/login', '/signup'];
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const isUserAuthenticated = async () => {
+      await fetch('http://localhost:9090/user/auth', {
+        method: 'GET',
+        credentials: 'include',
+      })
+        .then((res) => {
+          if (res.status === 200) {
+            UserIsAuthIgnoreUrls.map((url) => {
+              if (currentPath === url) {
+                window.location.assign('/account_settings');
+              }
+            });
+          } else {
+            LoginRequiredUrls.map((url) => {
+              if (currentPath === url) {
+                window.location.assign('/login');
+              }
+            });
+          }
+          return res.json();
+        })
+        .then((response) => {
+          setUserInfo(response.user);
+        });
+    };
+    isUserAuthenticated();
+  }, [setUserInfo]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation userInfo={userInfo} />
     </div>
   );
 }

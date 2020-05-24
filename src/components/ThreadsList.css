@@ -1,0 +1,34 @@
+.sorting-container {
+  text-align: center;
+}
+
+.sort-tap {
+  color: rgba(0, 0, 0, 0.746);
+  outline: none !important;
+  border: none !important;
+  border: 1px solid transparent;
+  margin: 0 9px;
+  padding: 5px 0px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  background: transparent;
+  border-bottom: 2px solid transparent !important;
+  transition: 0.2 ease;
+  cursor: pointer;
+}
+
+.sort-tap:hover {
+  border-bottom: 2px solid rgba(13, 196, 13, 0.534) !important;
+}
+
+.sort-tap:active {
+  color: black;
+  border-bottom: 2px solid rgb(13, 196, 13) !important;
+}
+
+.sort-tap.active {
+  color: rgb(13, 196, 13);
+  border-bottom: 2px solid rgb(13, 196, 13) !important;
+  cursor: default;
+}

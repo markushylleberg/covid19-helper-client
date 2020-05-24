@@ -1,0 +1,97 @@
+.thread {
+  padding: 5px 15px;
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.19);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.thread:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.thread h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0;
+  cursor: pointer;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.thread-created-at {
+  font-size: 10px;
+  cursor: pointer;
+  color: rgba(114, 114, 114, 0.5);
+}
+
+.thread-user {
+  font-size: 10px;
+  cursor: pointer;
+  color: rgba(114, 114, 114, 0.5);
+}
+
+.thread-user svg {
+  color: rgba(114, 114, 114, 0.247);
+}
+
+.thread-user span img {
+  position: absolute;
+  width: 15px;
+  margin-top: -1px;
+  z-index: 0;
+  margin-left: 5px;
+}
+
+.thread-body {
+  font-size: 12px;
+  width: 100%;
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+.thread-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.thread-title div {
+  text-align: right;
+  padding: 5px 0;
+}
+
+.thread-title div button {
+  border: none !important;
+  outline: none !important;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 26px;
+  color: rgb(35, 228, 35);
+}
+
+.thread-numbers {
+  display: flex;
+  color: rgba(53, 53, 53, 0.883);
+}
+
+.thread-numbers p {
+  margin: 0 5px;
+  padding: 10px 0;
+}
+
+.thread-numbers p span {
+  font-size: 10px;
+}
+
+.small-text {
+  font-size: 9px;
+  color: rgba(107, 107, 107, 0.438);
+}

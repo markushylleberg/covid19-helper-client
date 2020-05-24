@@ -1,0 +1,29 @@
+.single-thread h1 {
+  margin: 25px 0 !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 10px 0;
+  cursor: pointer;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.single-thread-container {
+  margin: 25px 0;
+}
+
+.thread-single-body {
+  /* background-color: white; */
+  border-left: 3px solid rgb(13, 196, 13);
+  padding: 10px;
+}
+
+.single-thread-starter span img {
+  position: absolute;
+  width: 20px;
+  margin-left: 7px;
+  z-index: -1;
+}

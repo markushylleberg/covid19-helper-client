@@ -1,38 +1,207 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100;300;700;900&display=swap');
+
+body {
+  background-color: rgba(226, 226, 226, 0.25);
+}
+
+.margin-3 {
+  margin: 0 10rem;
+}
+
+.page-wrapper-padding {
+  padding: 60px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.float-right {
+  float: right;
+}
+
+.btn-icon {
+  /* margin: 15px 0; */
+  font-size: 25px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btn-icon:hover {
+  color: rgb(13, 196, 13);
+}
+
+.btn-icon-close {
+  /* margin: 15px 0; */
+  font-size: 25px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btn-icon-close:hover {
+  color: rgb(196, 13, 13);
+}
+
+.green {
+  color: rgb(13, 196, 13);
+}
+
+.red {
+  color: rgb(196, 13, 13);
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headline {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sub-headline {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input-pair,
+.text-pair,
+.select-pair {
+  display: grid;
+  padding: 8px 30px;
+}
+
+.select-pair select {
+  background-color: white;
+  height: 40px;
+}
+
+.input-pair label,
+.text-pair label,
+.select-pair label {
+  text-align: left;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  width: 100%;
+  padding: 3px 0;
+}
+
+.input-pair label span,
+.text-pair label span,
+.select-pair label span {
+  font-size: 13px;
+  text-transform: none;
+  color: rgb(13, 196, 13);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.input-pair input,
+.text-pair textarea,
+.select-pair select {
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  border-radius: 5px;
+}
+
+.input-pair input:active,
+.input-pair input:focus,
+.text-pair textarea:active,
+.text-pair textarea:focus {
+  border: 1px solid rgba(128, 128, 128, 0.78);
+}
+
+.submit-btn {
+  padding: 18px 35px;
+  background-color: transparent;
+  color: rgb(35, 228, 35);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none !important;
+  cursor: pointer;
+  transition: 0.1s ease;
+  border: 2px solid rgb(35, 228, 35);
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(35, 228, 35);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-btn {
+  padding: 18px 35px;
+  background-color: transparent;
+  color: rgb(179, 18, 18);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none !important;
+  cursor: pointer;
+  transition: 0.1s ease;
+  border: 2px solid rgb(179, 18, 18);
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.delete-btn:hover {
+  background-color: rgb(179, 18, 18);
+  color: white;
+}
+
+.back-arrow {
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+  color: black;
+  margin-top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.back-arrow:hover {
+  color: rgb(35, 228, 35);
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px solid rgba(185, 185, 185, 0.233);
+  height: 1px;
+  margin: 35px 0;
+}
+
+.margin-tb {
+  margin: 15px 0;
+}
+
+.w-60 {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.no-mp {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .w-60 {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile-page-liked {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-headline {
+    font-size: 18px;
+  }
+
+  .headline {
+    font-size: 22px;
   }
 }
