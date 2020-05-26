@@ -156,7 +156,7 @@ const Navigation = ({ userInfo }) => {
         )}
         <Switch>
           <Route exact path="/home">
-            <HomePage />
+            <HomePage user={userInfo} />
           </Route>
           <Route exact path="/login">
             <LoginPage />

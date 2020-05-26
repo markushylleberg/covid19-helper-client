@@ -37,7 +37,7 @@ const ThreadForm = (props) => {
   };
 
   return (
-    <div class="thread-form-container w-60">
+    <div className="thread-form-container w-60">
       <FaPaperPlane />
       <h3>Start a new thread </h3>
       <form onSubmit={handleThreadPost}>

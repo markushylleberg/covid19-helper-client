@@ -1,0 +1,38 @@
+.summary-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.global-numbers {
+  margin: 20px;
+}
+
+.global-numbers p {
+  text-align: left;
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+}
+
+.global-numbers p span {
+  float: right;
+  font-weight: 300;
+  color: red;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.border-right {
+  border-right: 1px solid rgba(211, 211, 211, 0.397);
+}
+
+@media (max-width: 950px) {
+  .border-right {
+    border-right: none;
+  }
+
+  .summary-stats {
+    grid-template-columns: 1fr;
+  }
+}

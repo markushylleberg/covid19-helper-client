@@ -20,6 +20,7 @@ nav {
 
 .logo-container {
   max-height: 60px;
+  pointer-events: none;
 }
 
 nav div:nth-child(2) {

@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [userInfo, setUserInfo] = useState('');
 
-  const LoginRequiredUrls = ['/account_settings', '/logout'];
+  const LoginRequiredUrls = ['/accountsettings', '/logout'];
   const UserIsAuthIgnoreUrls = ['/login', '/signup'];
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
           if (res.status === 200) {
             UserIsAuthIgnoreUrls.map((url) => {
               if (currentPath === url) {
-                window.location.assign('/account_settings');
+                window.location.assign('/accountsettings');
               }
             });
           } else {

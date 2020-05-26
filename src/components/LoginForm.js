@@ -31,7 +31,7 @@ const LoginForm = () => {
 
   return (
     <div className="text-center w-60">
-      <h1 className="headline text-center">Login form</h1>
+      <h1 className="headline text-center">Login</h1>
       <p className="small-text w-60 margin-3">
         Welcome to COVID-19 Helper! This is a place where you can get the latest
         numbers on the pandemic - and where to can also chat with other people
